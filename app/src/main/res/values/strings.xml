@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Two Tap Train</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Search_Station">Search Station</string>
+    <string name="trainname">Train Name</string>
+    <string name="trainno">Train No</string>
+    <string name="source">Source</string>
+    <string name="arrival">Arrival</string>
+    <string name="destination">Destination</string>
+    <string name="departure">Departure</string>
+    <string name="dstn">DSTN</string>
+    <string name="src">SRC</string>
+    <string name="depdate">2. Select Departure Date</string>
+    <string name="dd">dd/mm/yyyy</string>
+    <string name="srcndstn">1. Select Source &amp; Destination</string>
+</resources>

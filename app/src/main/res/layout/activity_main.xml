@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/anchor">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/appbar"
+         />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="@string/src"
+        android:id="@+id/button"
+        android:background="#8942A5F5"
+        android:textColor="#FFFFFF"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="50dp"
+
+        android:onClick="ShowList"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dstn"
+        android:background="#8942A5F5"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="50dp"
+
+
+
+
+        android:onClick="ShowList"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/srcndstn"
+        android:textColor="#61000000"
+        android:gravity="start"
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:drawableBottom="@drawable/underline"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#61000000"
+        android:text="@string/depdate"
+        android:gravity="start"
+        android:id="@+id/textView2"
+        android:layout_marginTop="220dp"
+        android:drawableBottom="@drawable/underline"
+
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/cal"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="showDialogDate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dd"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/searchwhite"
+        android:clickable="true"
+        android:onClick="search"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+
+        >
+
+    </android.support.design.widget.FloatingActionButton>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_swap_horiz_black_48dp"
+        android:id="@+id/swap"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

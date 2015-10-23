@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:layout_margin="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trainname"
+        android:id="@+id/trainName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trainno"
+        android:id="@+id/trainNo"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+
+        android:layout_below="@id/trainName"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source"
+        android:id="@+id/source"
+        android:layout_below="@id/trainName"
+        android:layout_toEndOf="@id/trainNo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#61000000"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrival"
+        android:id="@+id/arrival"
+        android:layout_below="@id/source"
+        android:layout_toEndOf="@id/trainNo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#61000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination"
+        android:id="@+id/destination"
+        android:layout_below="@id/trainName"
+        android:layout_toEndOf="@id/source"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#61000000"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/departure"
+        android:id="@+id/departure"
+        android:layout_below="@id/destination"
+        android:layout_toEndOf="@id/arrival"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#61000000"
+
+
+        />
+</RelativeLayout>
